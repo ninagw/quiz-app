@@ -38,7 +38,7 @@ nav {
   width: 100%;
   height: auto;
   position: fixed;
-  bottom: 6px;
+  bottom: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
