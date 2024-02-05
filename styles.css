@@ -1,1 +1,13 @@
+body {
+  height: 414px;
+  width: 896px;
+}
 
+header {
+  position: sticky;
+  top: 0;
+}
+
+h1 {
+  text-align: center;
+}
