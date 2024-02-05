@@ -13,7 +13,7 @@ header {
   padding-top: 15px;
   position: sticky;
   top: 0;
-  background: rgb(9, 9, 71);
+  background-color: rgb(9, 9, 71);
 }
 
 h1 {
@@ -26,11 +26,13 @@ h1 {
 
 section {
   border: solid 2px;
+  border-radius: 10px;
   margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: rgb(173, 212, 246);
 }
 
 nav {
@@ -48,6 +50,10 @@ nav {
 
 button {
   margin-bottom: 10px;
+  background-color: rgb(223, 219, 219);
+  border: none;
+  border-radius: 10px;
+  padding: 7px;
 }
 
 img {
