@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
+
     <title>Quiz App</title>
   </head>
   <body data-js="body">
@@ -12,20 +14,25 @@
     </header>
 
     <main>
-        <section>
+        <section class="container">
        <img src="./assets/icons/3231118_icon_profile.png" class="profile-picture" alt="profile picture Monika Mustermann">
        <h2>Monika Mustermann</h2>
         </section>
 
-       <h3>About me</h3>
+       <section>
+        <h3>About me</h3>
         <p>Lorem ipsum</p>
-
         /* counter */
-
+        </section>
+        
+      <section>
         <h3>Settings</h3>
+        <div class="container">
         <p>Dark Mode</p> 
         <button type="button" data-js="dark-mode-button">Switch To Dark Mode</button>
-    </main>
+        </div>
+      </section>
+      </main>
 
     <footer>
         <nav>
