@@ -24,7 +24,7 @@ h1 {
   padding: 0;
 }
 
-section {
+.question-cards {
   border: none;
   border-radius: 10px;
   margin: 15px;
