@@ -1,6 +1,6 @@
 .question-cards {
   border: none;
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   margin: 15px;
   display: flex;
   justify-content: center;

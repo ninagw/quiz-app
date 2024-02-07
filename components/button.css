@@ -2,6 +2,6 @@ button {
   margin-bottom: 10px;
   background-color: rgb(223, 219, 219);
   border: none;
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   padding: 7px;
 }
