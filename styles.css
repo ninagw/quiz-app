@@ -25,13 +25,31 @@ a:focus {
   width: 100px;
 }
 
-.container {
+.container--profile--sections {
+  margin: 15px 30px;
+}
+
+/* 
+.profile {
   display: flex;
   align-items: center;
-  justify-content: space-around;
 }
+
+.counter {
+  display: flex;
+  align-items: center;
+} */
+
+/* .navbar-highlight {
+  background-color: grey;
+} */
 
 .dark {
   background-color: black;
   color: white;
 }
+
+/* .dark-mode {
+  display: flex;
+  align-items: center;
+} */
