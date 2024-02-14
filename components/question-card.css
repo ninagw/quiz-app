@@ -7,11 +7,31 @@
   align-items: center; */
   flex-direction: column;
   background-color: var(--color-cards);
+  position: relative;
 }
 
-.bookmark {
+.bookmark-button {
   position: absolute;
   top: 0;
   right: 0;
   z-index: 10;
+}
+
+.bookmark-icon {
+  width: 2em;
+}
+
+.bookmark-empty {
+  background-image: url("../assets/icons/bookmark_empty_icon.svg");
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+}
+
+.bookmark-active {
+  background-image: url("../assets/icons/bookmark_black_icon.svg");
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  background-position: center center;
 }
