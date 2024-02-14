@@ -14,9 +14,11 @@
     </header>
 
     <main>
-        <section class="question-cards flex">
+    <!-------------- first question-card ----------------->
+        <section class="question-cards flex" data-js="question-card">
             <p>What property flips the axes in flexbox?</p>
-            <button>Show Answer</button>
+            <button data-js="answer-button" type="button">Show Answer</button>
+            <!-- <div class="hidden">test answer</div> -->
             <div class="question-card-button-bookmark">
               <button
                 data-js="bookmark-button"  
@@ -28,7 +30,8 @@
             </div>
         </section>
 
-        <section class="question-cards flex">
+    <!-------------- second question-card ----------------->
+    <section class="question-cards flex" data-js="question-card">
           <p>Lorem ipsum, dolor s?</p>
           <button>Show Answer</button>
           <div class="question-card-button-bookmark">

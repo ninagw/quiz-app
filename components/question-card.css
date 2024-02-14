@@ -35,3 +35,16 @@
   display: inline-block;
   background-position: center center;
 }
+
+.hidden {
+  height: auto;
+  width: auto;
+  background-color: grey;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 7px;
+  margin: 15px;
+  flex-direction: column;
+  background-color: var(--color-brightgrey);
+  /* background-color: var(--color-cards); */
+}

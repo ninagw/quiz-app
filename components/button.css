@@ -1,6 +1,6 @@
 button {
   margin-bottom: 10px;
-  background-color: rgb(223, 219, 219);
+  background-color: var(--color-brightgrey);
   border: none;
   border-radius: var(--border-radius);
   padding: 7px;
