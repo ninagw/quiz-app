@@ -5,6 +5,7 @@ const questionCard = document.querySelector('[data-js="question-card"]');
 const bookmarkButton = document.querySelector('[data-js="bookmark-button"]');
 const bookmarkIcon = document.querySelector('[data-js="bookmark-icon"]');
 const answerButton = document.querySelector('[data-js="answer-button"]');
+const answer = document.querySelector('[data-js="answer"]');
 
 // Bookmark Button switch to active:
 bookmarkIcon.addEventListener("click", () => {
@@ -13,12 +14,17 @@ bookmarkIcon.addEventListener("click", () => {
 
 // Click answerButton and display/hide answer:
 answerButton.addEventListener("click", () => {
-  const showAnswer = document.createElement("div"); // create div
-  questionCard.append(showAnswer); // position new div-element to button-element which we declared as const answerButton
-  showAnswer.classList.add("hidden"); // style new div-element with css-class .hidden
-  showAnswer.textContent = "The answer ist: lorem ipsum dolor"; // add text to new div-element
+  if (answer.hidden === true) {
+    answer.removeAttribute("hidden");
+  } else {
+    answer.setAttribute("hidden", "");
+  }
+  // const showAnswer = document.createElement("div"); // create div
+  // questionCard.append(showAnswer); // position new div-element to button-element which we declared as const answerButton
+  // showAnswer.classList.add("hidden"); // style new div-element with css-class .hidden
+  // showAnswer.textContent = "The answer is: lorem ipsum dolor"; // add text to new div-element
 
-  // showAnswer.classList.toggle("hidden");
+  // answer.classList.toggle("hidden");
 });
 
 // Switch Dark Mode Button On:
