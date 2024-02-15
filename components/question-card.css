@@ -1,6 +1,7 @@
 .question-cards {
   border: none;
   border-radius: var(--border-radius);
+  padding: 0px 10px;
   margin: 15px;
   /* display: flex;
   justify-content: center;
@@ -57,8 +58,7 @@
   border: none;
   border-radius: var(--border-radius);
   padding: 7px;
-  margin: 15px;
+  margin: 5px 15px 15px 15px;
   flex-direction: column;
-  /* background-color: var(--color-brightgrey); */
-  background-color: var(--color-cards);
+  background-color: var(--color-brightgrey);
 }

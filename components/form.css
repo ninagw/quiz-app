@@ -1,0 +1,21 @@
+.form {
+  /* border: none;
+    border-radius: var(--border-radius); */
+  padding-top: 20px;
+  margin: 15px;
+  flex-direction: column;
+  background-color: var(--color-cards);
+  /* position: relative; */
+}
+
+.form-button {
+  margin-top: 15px;
+}
+
+.fieldset {
+  border: none;
+}
+
+.form-container {
+  margin: 10px;
+}

@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" type="module" defer></script>
+    <script src="form.js" type="module" defer></script>
+
     <title>Quiz App</title>
   </head>
   <body>
@@ -12,19 +15,16 @@
     </header>
 
     <main>
-      <section class="question-cards flex">
-        <p>What property flips the axes in flexbox?</p>
-        <button>Show Answer</button>
-        <div class="question-card-button-bookmark">
-          <button
-            data-js="bookmark-button"  
-            class="bookmark-button"
-            aria-label="bookmark"
-            type="button"
-          ><span class="bookmark-empty" data-js="bookmark-icon"></span>
-          </button>
-        </div>
-    </section>
+    <form class="form flex" data-js="form">
+    <!-- <fieldset class="fieldset"> -->
+        <label for="question-input">Add a new question:</label>
+        <textarea name="questionInput" id="question-input" cols="25" rows="5"></textarea>
+        <div class="form-container"></div>
+        <label for="answer-input">Add the answer:</label>
+        <textarea name="answerInput" id="answer-input" cols="25" rows="5"></textarea>
+        <button type="submit" class="form-button" data-js="submit-button">Submit</button>
+    <!-- </fieldset> -->
+    </form>
     </main>
 
     <footer>

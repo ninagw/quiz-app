@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="index.js" defer></script>
+    <script src="index.js" type="module" defer></script>
+    <script src="form.js" type="module" defer></script>
 
     <title>Quiz App</title>
   </head>
@@ -18,7 +19,7 @@
         <section class="question-cards flex" data-js="question-card">
             <p>What property flips the axes in flexbox?</p>
             <button data-js="answer-button" type="button">Show Answer</button>
-            <div class="answer" data-js="answer" hidden>The answer is: lorem ipsum dolor</div>
+            <p class="answer" data-js="answer" hidden>The answer is: lorem ipsum dolor</p>
             <div class="question-card-button-bookmark">
               <button
                 data-js="bookmark-button"  
@@ -50,6 +51,7 @@
         <nav>
             <a href="index.html" aria-label="go to home"><img src="./assets/icons/185038_home_house_icon.svg" alt="home icon"></a>
             <a href="bookmarks.html" aria-label="go to your bookmarks"><img src="./assets/icons/bookmark_empty_icon.svg" alt="bookmark icon"></a>
+            <a href="form.html" aria-label="add new questions to your quizz app"><img src="./assets/icons/plus_circle_icon.svg" alt="plus icon"></a>
             <a href="profile.html" aria-label="go to your profile"><img src="./assets/icons/8324223_ui_essential_app_avatar_profile_icon.svg" alt="profile icon"></button>
         </nav>
     </footer>

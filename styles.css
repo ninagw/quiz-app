@@ -3,6 +3,7 @@
 @import "./components/header.css";
 @import "./components/navigation.css";
 @import "./components/question-card.css";
+@import "./components/form.css";
 
 img {
   height: 30px;

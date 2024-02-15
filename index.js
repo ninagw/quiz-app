@@ -19,20 +19,14 @@ answerButton.addEventListener("click", () => {
   } else {
     answer.setAttribute("hidden", "");
   }
-  // const showAnswer = document.createElement("div"); // create div
-  // questionCard.append(showAnswer); // position new div-element to button-element which we declared as const answerButton
-  // showAnswer.classList.add("hidden"); // style new div-element with css-class .hidden
-  // showAnswer.textContent = "The answer is: lorem ipsum dolor"; // add text to new div-element
-
-  // answer.classList.toggle("hidden");
 });
 
 // Switch Dark Mode Button On:
-// const darkModeButton = document.querySelector('[data-js="dark-mode-button"]');
+const darkModeButton = document.querySelector('[data-js="dark-mode-button"]');
 
-// darkModeButton.addEventListener("click", () => {
-//   bodyElement.classList.toggle("dark");
-// });
+darkModeButton.addEventListener("click", () => {
+  bodyElement.classList.toggle("dark");
+});
 
 // Darken navbar sections:
 // const navbarButtons = document.querySelector('[data-js="navbar"]');
