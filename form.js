@@ -37,4 +37,7 @@ form.addEventListener("submit", (event) => {
   newQuestionCard.append(newQuestionCardBookmarkButton);
   newQuestionCardBookmarkButton.append(newBookmarkButton);
   newBookmarkButton.append(newBookmarkIcon);
+
+  event.target.reset();
+  event.target.questionInput.focus();
 });
