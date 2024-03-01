@@ -18,10 +18,12 @@
     <form class="form flex" data-js="form">
     <!-- <fieldset class="fieldset"> -->
         <label for="question-input">Add a new question:</label>
-        <textarea name="questionInput" id="question-input" cols="25" rows="5"></textarea>
+        <textarea name="questionInput" id="question-input" cols="25" rows="5" data-js="question-input"></textarea>
+        <small><span class="characters" data-js="characters-left-question"></span> characters left</small>
         <div class="form-container"></div>
         <label for="answer-input">Add the answer:</label>
-        <textarea name="answerInput" id="answer-input" cols="25" rows="5"></textarea>
+        <textarea name="answerInput" id="answer-input" cols="25" rows="5" data-js="answer-input"></textarea>
+        <small><span class="characters" data-js="characters-left-answer"></span>characters left</small>
         <button type="submit" class="form-button" data-js="submit-button">Submit</button>
     <!-- </fieldset> -->
     </form>

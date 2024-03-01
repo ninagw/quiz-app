@@ -41,3 +41,45 @@ form.addEventListener("submit", (event) => {
   event.target.reset();
   event.target.questionInput.focus();
 });
+
+function characters() {
+  const questionInput = document.querySelector('[data-js="question-input"]');
+  const answerInput = document.querySelector('[data-js="answer-input"]');
+
+  const charactersLeftQuestion = document.querySelector(
+    '[data-js="characters-left-question"]'
+  );
+  const charactersLeftAnswer = document.querySelector(
+    '[data-js="characters-left-answer"]'
+  );
+
+  const maxLengthQuestion = 200;
+  const maxLengthAnswer = 200;
+
+  // update characters of question input:
+  questionInput.addEventListener("input", () => {
+    charactersLeftQuestion(maxLengthQuestion - questionInput.value.length);
+    return;
+  });
+
+  const updateAmountLeftQuestion = (value) => {
+    charactersLeftQuestion.textContent = value;
+  };
+
+  updateAmountLeftQuestion(maxLengthQuestion);
+
+  // document.querySelector(
+  //   '[data-js="characters-left-question"]'
+  // ).textContent = `${maxLengthQuestion}`;
+
+  // update characters of answer input:
+  const updateAmountLeftAnswer = (value) => {
+    charactersLeftAnswer.innerText = value;
+  };
+
+  updateAmountLeftAnswer(maxLengthAnswer);
+
+  answerInput.addEventListener("input", () => {
+    charactersLeftAnswer(maxLengthAnswer - answerInput.value.length);
+  });
+}
