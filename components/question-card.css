@@ -1,8 +1,9 @@
 .question-cards {
   border: none;
   border-radius: var(--border-radius);
-  padding: 0px 10px;
+  padding: 0px 20px;
   margin: 15px;
+  font-size: 1em;
   /* display: flex;
   justify-content: center;
   align-items: center; */
@@ -37,28 +38,13 @@
   background-position: center center;
 }
 
-/* .answer {
-  display: none;
-  height: auto;
-  width: auto;
-  background-color: grey;
-  border: none;
-  border-radius: var(--border-radius);
-  padding: 7px;
-  margin: 15px;
-  flex-direction: column;
-  background-color: var(--color-brightgrey);
-  background-color: var(--color-cards); 
-} */
-
 .answer {
+  font-size: 1em;
   height: auto;
   width: auto;
-  background-color: grey;
   border: none;
   border-radius: var(--border-radius);
-  padding: 7px;
-  margin: 5px 15px 15px 15px;
+  margin: 0px 15px 15px 15px;
   flex-direction: column;
-  background-color: var(--color-brightgrey);
+  background-color: var(--color-cards);
 }

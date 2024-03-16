@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="index.js" defer></script>
+    <script src="index.js" type="module" defer></script>
+    <script src="profile.js" type="module" defer></script>
 
     <title>Quiz App</title>
   </head>
@@ -23,32 +24,19 @@
         <h3>About me</h3>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae nobis ab modi, non quo harum deserunt dolorem libero praesentium vero, sapiente, ipsum ratione voluptatibus dolor aliquid culpa laborum magni voluptate.</p>
         </section>
-
-        <!-- <section class="container--profile--sections flex">
-          /*counter*/
-        </section> -->
         
       <section class="container--profile--sections">
         <h3>Settings</h3>
-
-        <form aria-labelledby="title">
-          <input
-            type="checkbox"
-            id="switch-darkmode"
-            class="profile__settings-darkmode-input"
-            data-js="dark-mode-button"
-          />
-          <label for="switch-darkmode" class="profile__settings-darkmode-label"
-            >Darkmode On/Off</label
-          >
+         
+        <form class="container--profile--darkmode" aria-labelledby="title" >
+          <label class="switch" for="switch-darkmode">
+            <input type="checkbox" id="switch-darkmode" data-js="dark-mode-button">
+            <span class="slider round" ></span>
+          </label>
+           <p>Dark Mode</p>
         </form>
-
-        <!-- <div>
-        <p>Dark Mode</p> 
-        <button type="button" data-js="dark-mode-button">Switch To Dark Mode</button>
-        </div>
-      </section> -->
-      </main>
+      
+    </main>
 
     <footer>
         <nav>

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="index.js" type="module" defer></script>
     <script src="form.js" type="module" defer></script>
+    <script src="profile.js" type="module" defer></script>
 
     <title>Quiz App</title>
   </head>
@@ -17,9 +18,9 @@
     <main>
     <!-------------- first question-card ----------------->
         <section class="question-cards flex" data-js="question-card">
-            <p>What property flips the axes in flexbox?</p>
+            <p>What was the name of Hagrid's Norwegian Ridgeback dragon?</p>
             <button data-js="answer-button" type="button">Show Answer</button>
-            <p class="answer" data-js="answer" hidden>The answer is: lorem ipsum dolor</p>
+            <p class="answer" data-js="answer" hidden>Norbert</p>
             <div class="question-card-button-bookmark">
               <button
                 data-js="bookmark-button"  
@@ -30,22 +31,6 @@
               </button>
             </div>
         </section>
-
-    <!-------------- second question-card ----------------->
-    <section class="question-cards flex" data-js="question-card">
-          <p>Lorem ipsum, dolor s?</p>
-          <button>Show Answer</button>
-          <div class="question-card-button-bookmark">
-            <button
-              data-js="bookmark-button"  
-              class="bookmark-button"
-              aria-label="bookmark"
-              type="button"
-            ><span class="bookmark-empty" data-js="bookmark-icon"></span>
-            </button>
-          </div>
-      </section>
-    </main>
 
     <footer>
         <nav>

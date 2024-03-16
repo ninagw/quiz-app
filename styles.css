@@ -4,6 +4,7 @@
 @import "./components/navigation.css";
 @import "./components/question-card.css";
 @import "./components/form.css";
+@import "./components/dark-mode-switch.css";
 
 img {
   height: 30px;
@@ -44,8 +45,3 @@ a:focus {
 /* .navbar-highlight {
   background-color: grey;
 } */
-
-.dark {
-  background-color: black;
-  color: white;
-}
