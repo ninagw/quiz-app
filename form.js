@@ -14,20 +14,29 @@ form.addEventListener("submit", (event) => {
   const newQuestionCard = document.createElement("section");
   newQuestionCard.classList.add("question-cards");
   newQuestionCard.classList.add("flex");
+
   const newQuestion = document.createElement("p");
   newQuestion.textContent = question; // implement "const question" Zeile 10
+
   const newAnswerButton = document.createElement("button");
   newAnswerButton.textContent = "Show Answer";
+
   const newAnswer = document.createElement("p");
   newAnswer.classList.add("answer");
   newAnswer.setAttribute("hidden", "");
   newAnswer.textContent = answer; // implement "const answer" Zeile 11
+
   const newQuestionCardBookmarkButton = document.createElement("div");
   newQuestionCardBookmarkButton.classList.add("question-card-button-bookmark");
+
   const newBookmarkButton = document.createElement("button");
   newBookmarkButton.classList.add("bookmark-button");
+
   const newBookmarkIcon = document.createElement("span");
   newBookmarkIcon.classList.add("bookmark-empty");
+  newBookmarkIcon.addEventListener("click", () => {
+    newBookmarkIcon.classList.toggle("bookmark-active");
+  });
 
   // ------- append card to form.html ---------- //
   document.body.append(newQuestionCard);
