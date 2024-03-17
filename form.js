@@ -16,15 +16,22 @@ form.addEventListener("submit", (event) => {
   newQuestionCard.classList.add("flex");
 
   const newQuestion = document.createElement("p");
-  newQuestion.textContent = question; // implement "const question" Zeile 10
+  newQuestion.textContent = question; // implement the new input question, Zeile 10
 
   const newAnswerButton = document.createElement("button");
   newAnswerButton.textContent = "Show Answer";
+  newAnswerButton.addEventListener("click", () => {
+    if (newAnswer.hidden === true) {
+      newAnswer.removeAttribute("hidden");
+    } else {
+      newAnswer.setAttribute("hidden", "");
+    }
+  });
 
   const newAnswer = document.createElement("p");
   newAnswer.classList.add("answer");
   newAnswer.setAttribute("hidden", "");
-  newAnswer.textContent = answer; // implement "const answer" Zeile 11
+  newAnswer.textContent = answer; // implement the new input answer, Zeile 11
 
   const newQuestionCardBookmarkButton = document.createElement("div");
   newQuestionCardBookmarkButton.classList.add("question-card-button-bookmark");
