@@ -4,7 +4,7 @@ const bodyElement = document.querySelector('[data-js="body"]');
 const questionCard = document.querySelector('[data-js="question-card"]');
 const bookmarkButton = document.querySelector('[data-js="bookmark-button"]');
 const bookmarkIcons = document.querySelectorAll('[data-js="bookmark-icons"]');
-const answerButton = document.querySelector('[data-js="answer-button"]');
+const answerButtons = document.querySelectorAll('[data-js="answer-button"]');
 const answer = document.querySelector('[data-js="answer"]');
 
 // Bookmark Button switch to active:
@@ -15,13 +15,14 @@ bookmarkIcons.forEach((bookmarkIcon) => {
 });
 
 // Click answerButton and display/hide answer:
-
-answerButton.addEventListener("click", () => {
-  if (answer.hidden === true) {
-    answer.removeAttribute("hidden");
-  } else {
-    answer.setAttribute("hidden", "");
-  }
+answerButtons.forEach((answerButton) => {
+  answerButton.addEventListener("click", () => {
+    if (answer.hidden === true) {
+      answer.removeAttribute("hidden");
+    } else {
+      answer.setAttribute("hidden", "");
+    }
+  });
 });
 
 // Darken navbar sections:
