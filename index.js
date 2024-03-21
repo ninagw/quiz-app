@@ -4,6 +4,7 @@ const bodyElement = document.querySelector('[data-js="body"]');
 const questionCard = document.querySelector('[data-js="question-card"]');
 const bookmarkButton = document.querySelector('[data-js="bookmark-button"]');
 const bookmarkIcons = document.querySelectorAll('[data-js="bookmark-icons"]');
+// const answerButton = document.querySelectorAll('[data-js="answer-button"]');
 const answerButtons = document.querySelectorAll('[data-js="answer-button"]');
 const answer = document.querySelector('[data-js="answer"]');
 
