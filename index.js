@@ -5,7 +5,7 @@ const questionCard = document.querySelector('[data-js="question-card"]');
 const bookmarkButton = document.querySelector('[data-js="bookmark-button"]');
 const bookmarkIcons = document.querySelectorAll('[data-js="bookmark-icons"]');
 // const answerButton = document.querySelectorAll('[data-js="answer-button"]');
-const answerButtons = document.querySelectorAll('[data-js="answer-button"]');
+const answerButtons = document.querySelectorAll('[data-js="answer-buttons"]');
 const answer = document.querySelector('[data-js="answer"]');
 
 // Bookmark Button switch to active:
@@ -22,16 +22,6 @@ answerButtons.forEach((answerButton) => {
       answer.removeAttribute("hidden");
     } else {
       answer.setAttribute("hidden", "");
-    }
-  });
-});
-
-answer.forEach((answer) => {
-  answer.addEventListener("click", () => {
-    if (newAnswer.hidden === true) {
-      newAnswer.removeAttribute("hidden");
-    } else {
-      newAnswer.setAttribute("hidden", "");
     }
   });
 });
