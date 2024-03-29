@@ -26,6 +26,16 @@ answerButtons.forEach((answerButton) => {
   });
 });
 
+answer.forEach((answer) => {
+  answer.addEventListener("click", () => {
+    if (newAnswer.hidden === true) {
+      newAnswer.removeAttribute("hidden");
+    } else {
+      newAnswer.setAttribute("hidden", "");
+    }
+  });
+});
+
 // Darken navbar sections:
 // const navbarButtons = document.querySelector('[data-js="navbar"]');
 
