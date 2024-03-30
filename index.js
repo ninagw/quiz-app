@@ -33,3 +33,16 @@ answerButtons.forEach((answerButton) => {
 // navbarButtons.addEventListener("click", () => {
 //   navbarButtons.classList.add("navbar-highlight");
 // });
+
+// Nav Bar Animation – example:
+// const navLinks = document.querySelector('.nav-links');
+
+// navLinks.addEventListener('click', (event) => {
+//   const link = event.target.closest('a');
+//   if (!link) return;
+
+//   // Optional: Add a visual feedback for click action, like changing link color
+//   link.style.color = '#ff7f50';
+
+//   // You can add further actions here, like navigating to the clicked link
+// });
