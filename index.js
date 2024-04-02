@@ -6,7 +6,8 @@ const bookmarkButton = document.querySelector('[data-js="bookmark-button"]');
 const bookmarkIcons = document.querySelectorAll('[data-js="bookmark-icons"]');
 // const answerButton = document.querySelectorAll('[data-js="answer-button"]');
 const answerButtons = document.querySelectorAll('[data-js="answer-buttons"]');
-const answer = document.querySelector('[data-js="answer"]');
+// const answer = document.querySelector('[data-js="answer"]');
+const answers = document.querySelectorAll('[data-js="answer"]');
 
 // Bookmark Button switch to active:
 bookmarkIcons.forEach((bookmarkIcon) => {
@@ -16,12 +17,12 @@ bookmarkIcons.forEach((bookmarkIcon) => {
 });
 
 // Click answerButton and display/hide answer:
-answerButtons.forEach((answerButton) => {
+answerButtons.forEach((answerButton, index) => {
   answerButton.addEventListener("click", () => {
-    if (answer.hidden === true) {
-      answer.removeAttribute("hidden");
+    if (answers[index].hidden === true) {
+      answers[index].removeAttribute("hidden");
     } else {
-      answer.setAttribute("hidden", "");
+      answers[index].setAttribute("hidden", "");
     }
   });
 });
