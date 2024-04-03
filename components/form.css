@@ -23,3 +23,16 @@
 .characters {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.add-button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+/* .add-button {
+  display: flex;
+  position: ;
+  bottom: 0;
+  z-index: 10;
+} */
