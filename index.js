@@ -25,6 +25,7 @@ answerButtons.forEach((answerButton, index) => {
   });
 });
 
+// ------------------------
 // Darken navbar sections:
 // const navbarButtons = document.querySelector('[data-js="navbar"]');
 
