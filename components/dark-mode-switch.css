@@ -8,6 +8,10 @@
   color: black;
 }
 
+.dark-mode .form {
+  color: black;
+}
+
 /* Container for elements*/
 .container--profile--darkmode {
   display: flex;
