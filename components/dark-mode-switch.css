@@ -4,6 +4,10 @@
   color: white;
 }
 
+.dark-mode .question-cards {
+  color: black;
+}
+
 /* Container for elements*/
 .container--profile--darkmode {
   display: flex;
@@ -34,7 +38,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  /* background-color: #ccc; */
   background-color: var(--color-cards);
   -webkit-transition: 0.4s;
   transition: 0.4s;
