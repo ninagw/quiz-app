@@ -1,7 +1,7 @@
 .question-cards {
   border: none;
   border-radius: var(--border-radius);
-  padding: 0 20px;
+  padding: 0 50px 0 20px;
   margin: 15px;
   font-size: 1em;
   /* display: flex;
