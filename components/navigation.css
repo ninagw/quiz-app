@@ -9,4 +9,5 @@ nav {
   justify-content: space-around;
   align-items: center;
   gap: 20px;
+  z-index: 10;
 }
