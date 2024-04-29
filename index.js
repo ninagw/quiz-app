@@ -12,31 +12,42 @@ bookmarkIcons.forEach((bookmarkIcon) => {
   bookmarkIcon.addEventListener("click", () => {
     bookmarkIcon.classList.toggle("bookmark-active");
   });
+  // const isBookmarkActive = bookmarkIcon.classList.contains("bookmark-active");
+  // localStorage.setItem("bookmark-active", isBookmarkActive);
 });
 
 // Bookmark Button save on bookmarks-page
-document.addEventListener("DOMContentLoaded", () => {
-  bookmarkIcons.forEach((bookmarkIcon) => {
-    if (bookmarkIcon.classList.contains("bookmark-active")) {
-      const questionCard = bookmarkIcon.closest(".question-cards");
-      if (questionCard) {
-        const questionCardCopy = questionCard.cloneNode(true);
-        document
-          .getElementById("bookmarked-cards-container")
-          .appendChild(questionCardCopy);
-      }
-    }
-  });
-});
-// questionCards.forEach((questionCard) => {
-//   bookmarkIcons.addEventlistener("click", () => {
-//     if ("bookmark-active" === true) {
-//       const questionCardCopy = questionCard.cloneNode(true); // erstelle Kopie des html-Elements mit all seiner Kinder
-//     } else {
-//       return;
+// document.addEventListener("DOMContentLoaded", () => {
+//   bookmarkIcons.forEach((bookmarkIcon) => {
+//     if (bookmarkIcon.classList.contains("bookmark-active")) {
+//       const questionCard = bookmarkIcon.closest(".question-cards");
+//       if (questionCard) {
+//         const questionCardCopy = questionCard.cloneNode(true); // erstelle Kopie des html-Elements mit all seiner Kinder
+//         document
+//           .getElementById("bookmarked-cards-container")
+//           .appendChild(questionCardCopy);
+//       }
 //     }
 //   });
 // });
+
+// LOCAL STORAGE FÜR BOOKMARKS damit auf anderer seite angezeigt:
+// function toggleDarkMode() {
+//   document.body.classList.toggle("dark-mode");
+
+//   // Save preference to local storage
+//   const isDarkMode = document.body.classList.contains("dark-mode");
+//   localStorage.setItem("darkMode", isDarkMode);
+// }
+
+// // Check local storage for dark mode preference
+// const isDarkMode = localStorage.getItem("darkMode") === "true";
+// if (isDarkMode) {
+//   document.body.classList.add("dark-mode");
+// }
+
+// // Add event listener to the dark mode button
+// darkModeButton.addEventListener("click", toggleDarkMode);
 
 // Click answerButton and display/hide answer:
 answerButtons.forEach((answerButton, index) => {
