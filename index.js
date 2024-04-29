@@ -1,7 +1,7 @@
 console.clear();
 
 const bodyElement = document.querySelector('[data-js="body"]');
-const questionCard = document.querySelector('[data-js="question-card"]');
+const questionCards = document.querySelectorAll('[data-js="question-card"]');
 const bookmarkButton = document.querySelector('[data-js="bookmark-button"]');
 const bookmarkIcons = document.querySelectorAll('[data-js="bookmark-icons"]');
 const answerButtons = document.querySelectorAll('[data-js="answer-buttons"]');
@@ -13,6 +13,30 @@ bookmarkIcons.forEach((bookmarkIcon) => {
     bookmarkIcon.classList.toggle("bookmark-active");
   });
 });
+
+// Bookmark Button save on bookmarks-page
+document.addEventListener("DOMContentLoaded", () => {
+  bookmarkIcons.forEach((bookmarkIcon) => {
+    if (bookmarkIcon.classList.contains("bookmark-active")) {
+      const questionCard = bookmarkIcon.closest(".question-cards");
+      if (questionCard) {
+        const questionCardCopy = questionCard.cloneNode(true);
+        document
+          .getElementById("bookmarked-cards-container")
+          .appendChild(questionCardCopy);
+      }
+    }
+  });
+});
+// questionCards.forEach((questionCard) => {
+//   bookmarkIcons.addEventlistener("click", () => {
+//     if ("bookmark-active" === true) {
+//       const questionCardCopy = questionCard.cloneNode(true); // erstelle Kopie des html-Elements mit all seiner Kinder
+//     } else {
+//       return;
+//     }
+//   });
+// });
 
 // Click answerButton and display/hide answer:
 answerButtons.forEach((answerButton, index) => {
