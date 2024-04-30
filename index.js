@@ -7,13 +7,14 @@ const bookmarkIcons = document.querySelectorAll('[data-js="bookmark-icons"]');
 const answerButtons = document.querySelectorAll('[data-js="answer-buttons"]');
 const answers = document.querySelectorAll('[data-js="answer"]');
 
-// Bookmark Button switch to active:
+// toggle bookmark button:
 bookmarkIcons.forEach((bookmarkIcon) => {
   bookmarkIcon.addEventListener("click", () => {
     bookmarkIcon.classList.toggle("bookmark-active");
   });
-  // const isBookmarkActive = bookmarkIcon.classList.contains("bookmark-active");
-  // localStorage.setItem("bookmark-active", isBookmarkActive);
+  // Save to local storage
+  const isActive = bookmarkIcon.classList.contains("bookmark-active");
+  localStorage.setItem("bookmark-active", isBookmarkActive);
 });
 
 // Bookmark Button save on bookmarks-page
