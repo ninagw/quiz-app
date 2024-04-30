@@ -7,15 +7,42 @@ const bookmarkIcons = document.querySelectorAll('[data-js="bookmark-icons"]');
 const answerButtons = document.querySelectorAll('[data-js="answer-buttons"]');
 const answers = document.querySelectorAll('[data-js="answer"]');
 
-// toggle bookmark button:
+// Toggle bookmark button
 bookmarkIcons.forEach((bookmarkIcon) => {
   bookmarkIcon.addEventListener("click", () => {
     bookmarkIcon.classList.toggle("bookmark-active");
   });
   // Save to local storage
-  const isActive = bookmarkIcon.classList.contains("bookmark-active");
-  localStorage.setItem("bookmark-active", isBookmarkActive);
+  const id = bookmarkIcon.getAttribute("data-id");
+  const isBookmarkActive = bookmarkIcon.classList.contains("bookmark-active");
+  localStorage.setItem(`bookmark-active-${id}`, isBookmarkActive);
 });
+console.log("isBookmarkActive: ", isBookmarkActive);
+
+// Check local storage for bookmark preference
+bookmarkIcons.forEach((bookmarkIcon, id) => {
+  const isBookmarkActive =
+    localStorage.getItem(`bookmark-active-${id}`) === "true";
+  if (isBookmarkActive) {
+    const questionCard = bookmarkIcon.closest(".question-cards");
+    console.log("questionCard: ", questionCard);
+
+    const questionCardCopy = questionCard.cloneNode(true); // erstelle Kopie des html-Elements mit all seiner Kinder
+    document
+      .getElementById("bookmarked-cards-container")
+      .appendChild(questionCardCopy);
+  }
+});
+
+// answerButtons.forEach((answerButton, index) => {
+//   answerButton.addEventListener("click", () => {
+//     if (answers[index].hidden === true) {
+//       answers[index].removeAttribute("hidden");
+//     } else {
+//       answers[index].setAttribute("hidden", "");
+//     }
+//   });
+// });
 
 // Bookmark Button save on bookmarks-page
 // document.addEventListener("DOMContentLoaded", () => {
