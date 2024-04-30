@@ -54,8 +54,11 @@ form.addEventListener("submit", (event) => {
   newQuestionCardBookmarkButton.append(newBookmarkButton);
   newBookmarkButton.append(newBookmarkIcon);
 
+  // ------- reset input fields ---------- //
   event.target.reset();
   event.target.questionInput.focus();
+  charactersLeftQuestion.textContent = 150;
+  charactersLeftAnswer.textContent = 150;
 });
 
 // --------- COUNT CHARACTERS LEFT ----- //
