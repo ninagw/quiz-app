@@ -13,26 +13,26 @@ bookmarkIcons.forEach((bookmarkIcon) => {
     bookmarkIcon.classList.toggle("bookmark-active");
   });
   // Save to local storage
-  const id = bookmarkIcon.getAttribute("data-id");
-  const isBookmarkActive = bookmarkIcon.classList.contains("bookmark-active");
-  localStorage.setItem(`bookmark-active-${id}`, isBookmarkActive);
+  // const id = bookmarkIcon.getAttribute("data-id");
+  // const isBookmarkActive = bookmarkIcon.classList.contains("bookmark-active");
+  // localStorage.setItem(`bookmark-active-${id}`, isBookmarkActive);
 });
-console.log("isBookmarkActive: ", isBookmarkActive);
+// console.log("isBookmarkActive: ", isBookmarkActive);
 
 // Check local storage for bookmark preference
-bookmarkIcons.forEach((bookmarkIcon, id) => {
-  const isBookmarkActive =
-    localStorage.getItem(`bookmark-active-${id}`) === "true";
-  if (isBookmarkActive) {
-    const questionCard = bookmarkIcon.closest(".question-cards");
-    console.log("questionCard: ", questionCard);
+// bookmarkIcons.map((bookmarkIcon, id) => {
+//   const isBookmarkActive =
+//     localStorage.getItem(`bookmark-active-${id}`) === "true";
+//   if (isBookmarkActive) {
+//     const questionCard = bookmarkIcon.closest(".question-cards");
+//     console.log("questionCard: ", questionCard);
 
-    const questionCardCopy = questionCard.cloneNode(true); // erstelle Kopie des html-Elements mit all seiner Kinder
-    document
-      .getElementById("bookmarked-cards-container")
-      .appendChild(questionCardCopy);
-  }
-});
+//     const questionCardCopy = questionCard.cloneNode(true); // erstelle Kopie des html-Elements mit all seiner Kinder
+//     document
+//       .getElementById("bookmarked-cards-container")
+//       .appendChild(questionCardCopy);
+//   }
+// });
 
 // answerButtons.forEach((answerButton, index) => {
 //   answerButton.addEventListener("click", () => {
