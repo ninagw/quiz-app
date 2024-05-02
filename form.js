@@ -56,6 +56,8 @@ form.addEventListener("submit", (event) => {
 
   event.target.reset();
   event.target.questionInput.focus();
+  charactersLeftQuestion.textContent = 150;
+  charactersLeftAnswer.textContent = 150;
 });
 
 // --------- COUNT CHARACTERS LEFT ----- //
