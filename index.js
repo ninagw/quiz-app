@@ -8,15 +8,15 @@ const answerButtons = document.querySelectorAll('[data-js="answer-buttons"]');
 const answers = document.querySelectorAll('[data-js="answer"]');
 
 // Toggle bookmark button
-bookmarkIcons.forEach((bookmarkIcon) => {
-  bookmarkIcon.addEventListener("click", () => {
-    bookmarkIcon.classList.toggle("bookmark-active");
-  });
-  // Save to local storage
-  // const id = bookmarkIcon.getAttribute("data-id");
-  // const isBookmarkActive = bookmarkIcon.classList.contains("bookmark-active");
-  // localStorage.setItem(`bookmark-active-${id}`, isBookmarkActive);
-});
+// bookmarkIcons.forEach((bookmarkIcon) => {
+//   bookmarkIcon.addEventListener("click", () => {
+//     bookmarkIcon.classList.toggle("bookmark-active");
+//   });
+//   // Save to local storage
+//   // const id = bookmarkIcon.getAttribute("data-id");
+//   // const isBookmarkActive = bookmarkIcon.classList.contains("bookmark-active");
+//   // localStorage.setItem(`bookmark-active-${id}`, isBookmarkActive);
+// });
 // console.log("isBookmarkActive: ", isBookmarkActive);
 
 // Check local storage for bookmark preference
