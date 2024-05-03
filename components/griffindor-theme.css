@@ -1,7 +1,10 @@
 /* The Griffindor Theme Styling */
+
 .griffindor-mode {
-  background-color: #ff000095;
-  color: #ffaa00;
+  /* background-color: #951b00;
+  color: #ffaa00; */
+  color: #951b00;
+  background-color: #ffaa00;
 }
 
 .griffindor-mode .question-cards {

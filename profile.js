@@ -1,5 +1,3 @@
-console.clear();
-
 //-------------- DARK MODE -----------------
 const darkModeButton = document.querySelector('[data-js="dark-mode-button"]');
 
@@ -21,23 +19,25 @@ if (isDarkMode) {
 // Add event listener to the dark mode button
 darkModeButton.addEventListener("click", toggleDarkMode);
 
-//-------------- GRIFFINDOR / RED THEME -----------------
-const redModeButton = document.querySelector('[data-js="dark-mode-button"]');
+//-------------- GRIFFINDOR / RED THEME --------------------------------------------------
+const griffindorModeButton = document.querySelector(
+  '[data-js="griffindor-mode-button"]'
+);
 
 // Switch dark mode button on/off
-function toggleDarkMode() {
-  document.body.classList.toggle("dark-mode");
+function toggleGriffindorMode() {
+  document.body.classList.toggle("griffindor-mode");
 
   // Save preference to local storage
-  const isDarkMode = document.body.classList.contains("dark-mode");
-  localStorage.setItem("darkMode", isDarkMode);
+  const isGriffindorMode = document.body.classList.contains("griffindor-mode");
+  localStorage.setItem("griffindorMode", isGriffindorMode);
 }
 
 // Check local storage for dark mode preference
-const isDarkMode = localStorage.getItem("darkMode") === "true";
-if (isDarkMode) {
-  document.body.classList.add("dark-mode");
+const isGriffindorMode = localStorage.getItem("griffindorMode") === "true";
+if (isGriffindorMode) {
+  document.body.classList.add("griffindor-mode");
 }
 
 // Add event listener to the dark mode button
-darkModeButton.addEventListener("click", toggleDarkMode);
+griffindorModeButton.addEventListener("click", toggleGriffindorMode);
