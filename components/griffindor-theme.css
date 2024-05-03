@@ -1,19 +1,19 @@
 /* The Griffindor Theme Styling */
-.dark-mode {
-  background-color: black;
-  color: white;
+.griffindor-mode {
+  background-color: #ff000095;
+  color: #ffaa00;
 }
 
-.dark-mode .question-cards {
+.griffindor-mode .question-cards {
   color: black;
 }
 
-.dark-mode .form {
+.griffindor-mode .form {
   color: black;
 }
 
 /* Container for elements*/
-.container--profile--darkmode {
+.container--profile--griffindor {
   display: flex;
   gap: 10px;
   align-items: center;
