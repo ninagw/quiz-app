@@ -5,6 +5,7 @@
 @import "./components/question-card.css";
 @import "./components/form.css";
 @import "./components/dark-mode-switch.css";
+@import "./components/griffindor-theme.css";
 
 img {
   height: 30px;
